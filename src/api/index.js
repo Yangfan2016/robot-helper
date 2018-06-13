@@ -19,9 +19,9 @@ export default {
         let that = this;
 
         if (this.interceptContent(str, function (res) {
-            cb && cb({
+            cb && cb(Object.assign(res,{
                 url:that.getVoiceSrcOfBaidu(res.text)
-            });
+            }));
         })) return;
 
         Yan.$http({
@@ -36,10 +36,10 @@ export default {
                 loc: "北京市"
             },
             success: res => {
-                cb && cb({
+                cb && cb(Object.assign(res,{
                     url:that.getVoiceSrcOfBaidu(res.text),
                     info:res.list
-                });
+                }));
             }
         });
     }

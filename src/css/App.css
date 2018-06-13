@@ -5,8 +5,74 @@ html,body{
 html{
     font-size:20px;
 }
-.app{
-    width:500px;
-    height:700px;
+body{
     padding: 20px 15px;
+    background-color: rgb(47, 47, 47);
+    color:#fff;
+}
+.app{
+    font-size: 0.8rem;
+}
+.speck-inp{
+    background-color: inherit;
+    color:inherit;
+}
+.listbox{
+    margin:15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.list-news{
+    height:450px;
+}
+.microphonebox{
+    position: fixed;
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+}
+.micro-text{
+    text-align: initial;
+}
+.icon-microphone{
+    padding: 15px;
+    border-radius: 50%;
+    border:2px solid;
+    font-size: 1.6rem;
+}
+.animate-border{
+    animation: shake 0.8s ease-in-out infinite;
+}
+.animat-text{
+    animation: rotate 2s 6s infinite;
+}
+@keyframes rotate{
+    0%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes shake{
+    0%{
+        border-color:#f20;
+    }
+    25%{
+        border-color:rgb(255, 115, 0);
+    }
+    50%{
+        border-color:rgb(0, 255, 76);
+    }
+    75%{
+        border-color:rgb(0, 119, 255);
+    }
+    100%{
+        border-color:rgb(89, 0, 255);
+    }
 }
