@@ -13,15 +13,15 @@ $ yarn run dev
 
 ### Do
 
-<input type="checkbox" checked />聊天  
-<input type="checkbox" checked />语音对话    
-<input type="checkbox" checked />查询天气  
-<input type="checkbox" checked />查询新闻  
-<input type="checkbox" checked />查询百科    
-<input type="checkbox" checked />打开百度搜索  
-<input type="checkbox" />播放音乐     
-<input type="checkbox" />定时闹钟  
-<input type="checkbox" />指定schedule          
+- [x] 聊天  
+- [x] 语音对话    
+- [x] 查询天气  
+- [x] 查询新闻  
+- [x] 查询百科    
+- [x] 打开百度搜索  
+- [ ] 播放音乐     
+- [ ] 定时闹钟  
+- [ ] 指定schedule          
 
 
 ### Contributing
