@@ -13,7 +13,17 @@ export default {
         return !!search;
     },
     getVoiceSrcOfBaidu(txt) {
-        return `http://tsn.baidu.com/text2audio?tex=${txt}&tok=24.b522c866f6df1788d70374b2ab008e45.2592000.1531194904.282335-11376852&cuid=1994-2018-0610&ctp=1&lan=zh&spd=5&pit=5&vol=5&per=0`;
+        return 'http://tsn.baidu.com/text2audio?'+Yan.$params.serialize({
+            'tex':txt,
+            'tok':'24.9c9086d0096597de24687e5996b307c2.2592000.1540215439.282335-11376852', // a month expires
+            'cuid':'1994-2018-0610',
+            'ctp':1,
+            'lan':'zh',
+            'spd':5,
+            'pit':5,
+            'vol':5,
+            'per':0,
+        });        
     },
     getInfoOfRobot(str, cb) {
         let that = this;

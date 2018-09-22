@@ -1,6 +1,7 @@
 {
-  "name": "xiaofan-robot",
+  "name": "robot-helper",
   "version": "0.1.0",
+  "description": "This is a chatbot based on baidu voice synthesis and Turing robot",
   "private": true,
   "dependencies": {
     "antd": "^3.5.2",
